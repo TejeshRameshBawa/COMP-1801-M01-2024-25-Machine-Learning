@@ -30,12 +30,14 @@ These results describe the academic evaluation in the report, not a deployed qua
 
 ## Run or inspect
 
-1. Open the notebook in Jupyter or Google Colab.
-2. Install `pandas numpy matplotlib seaborn scikit-learn` and a notebook environment.
-3. In Colab, upload `COMP1801_Coursework_Dataset.csv` to `/content/`. For a local run, replace both `/content/COMP1801_Coursework_Dataset.csv` loading paths with the local filename.
-4. Run cells in order and inspect the held-out metrics and confusion matrices.
+The original submitted notebook and saved outputs remain available above. For local use, [analysis-local.ipynb](analysis-local.ipynb) loads the CSVs from the repository root and has cleared outputs.
 
-The original notebook and saved outputs are preserved. A fresh end-to-end run and compatibility with current library versions have not been verified.
+1. Download or clone the complete repository.
+2. Create a separate Python 3.11 environment.
+3. From the repository root, run `python -m pip install -r requirements.txt`, then `python -m jupyter lab`.
+4. Open `analysis-local.ipynb` with that environment's Python kernel and run cells in order.
+
+The portable copy changes only input paths and inline installation cells. Model settings and analytical methods are preserved. Code cells passed syntax checks, and the notebook source was matched to the submitted GitHub version before adaptation. A fresh end-to-end analysis and clean-environment dependency installation have not been verified. Library changes, training time and original analytical limitations can affect reproduction.
 
 ## Context
 
